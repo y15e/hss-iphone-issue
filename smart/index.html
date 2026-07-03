@@ -1,43 +1,12 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="ja"><!-- InstanceBegin template="/Templates/temp.dwt" codeOutsideHTMLIsLocked="false" -->
+<html lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>HSS iPhone Issue</title>
 </head>
-
 <body>
-<div align="center">
-		<img src="../images/tittle_ps.gif" width="710" height="70" style="width:710;max-width: 100%;height: auto;"></br></br>
-        <table width="710"  border="0" cellpadding="0" cellspacing="0">
-          <tr>
-            <td height="4" valign="top" background="../images/tableback_02.gif"><img src="../images/tableback_01.gif" width="710" height="4"></td>
-          </tr>
-          <tr>
-            <td valign="top" background="../images/tableback_02.gif"><table width="100%"  border="0" cellspacing="0" cellpadding="20">
-              <tr>
-                <td valign="top">
-                <table width="100%" height="70"  border="0" cellpadding="10" cellspacing="0" background="../images/hedderback.jpg">
-                  <tr>
-                    <td width="25%" nowrap><span class="style4"><strong>決済メニュー【カード決済処理】</strong></span></td>
-                    <td></td>
-                    <!-- td width="10"><div align="right">
-                      <input type="button" name="Button" value="ログアウト">
-                    </div></td -->
-                  </tr>
-                </table><br>
-				<TABLE align="center" border=0 cellSpacing=0 cellPadding=0 width="90%"><TR><TD>
-				①カード番号はハイフン無しで入力してください。<br>
-				②支払いタイプのイラストは自動選択されます。<br>
-				③有効期限は、例えば2027年4月の場合は「04/27」とご入力ください。<br>
-				④セキュリティコードはカード裏面の署名欄付近に記載されています。<br>
-				⑤「次へ」または「今すぐ支払う」ボタンをクリックして決済完了となります。<br>
-				<span class="style5">※「次へ」または「今すぐ支払う」ボタンをクリックしても、画面を閉じず、暫らくお待ちください。<br>
-				※応答が遅れても、再度入力し「今すぐ支払う」ボタンをクリック（二重決済）しないでください。</span><br>
-				</TD></TR></TABLE>
-<!-- iframe name="hss_iframe" width="570px" height="350px" frameborder="1" scrolling="no"></iframe -->
-<div align="center">
+
 <iframe name="hss_iframe" width="500px" height="1000px" frameborder="0" scrolling="no"></iframe>
-</div>
+
 <form style="display:none" target="hss_iframe" name="form_iframe" action=https://securepayments.paypal.com/acquiringweb method="post">
 <input type="hidden" name="cmd" value="_hosted-payment">
 <!-- input type="hidden" name="business" value="D9X96WXPH4Z4J" -->
@@ -61,45 +30,7 @@
 <script type="text/javascript">
 document.form_iframe.submit(); 
 </script>
-<div class="miniLayout div.container"></div>
-                                                                        <!-- p align="center">&nbsp;</p -->
-                                    <div align="center">
-                                      <DIV align=center>                                        
-                                        <!-- p -->
-                                          <INPUT onclick="BACKMENU()" value="入力画面に戻る" type=button style="font-size: 1.2rem;">
-<!-- /p -->
-                                      </DIV>
-                    </div>
-                  </td>
-              </tr>
-            </table></td>
-          </tr>
-          <tr>
-            <td height="4" valign="top"><img src="../images/tableback_03.gif" width="710" height="4"></td>
-          </tr>
-        </table>
-        <!-- InstanceEndEditable -->
-  <br>
-  <hr>
-        <br>
-</div>
-<form method="post" name="tomenu" action="kessai.php">
-<INPUT name="contflg" type=hidden value="0">
-<INPUT name="contcost" type=hidden value="1500">
-<INPUT name="limityear" type=hidden value="2026">
-<INPUT name="limitmonth" type=hidden value="06">
-<INPUT name="opecnt" type=hidden value="1">
-<INPUT name="jmbpass" type=hidden value="">
-<INPUT name="cardbrand" type=hidden value="1,VISA">
-<INPUT name="cardmm" type=hidden value="08">
-<INPUT name="cardyy" type=hidden value="28">
-<INPUT name="billing_last_name" type=hidden value="paypal">
-<INPUT name="billing_first_name" type=hidden value="test">
-<INPUT name="m_add1" type=hidden value="">
-<INPUT name="m_add2" type=hidden value="">
-<INPUT name="m_type" type=hidden value="">
-<INPUT name="subtotal" type=hidden value="1500">
-<INPUT name="smartpw" type=hidden value="test">
-</form>
+
 </body>
-<!-- InstanceEnd --></html>
+</html>
+
