@@ -1,2 +1,74 @@
+body,td,th {
+	font-size: 98%;
+	text-align: left;
+}
 body {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+a:link {
+	color: #FF00FF;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #FF0000;
+}
+a:active {
+	text-decoration: none;
+}
+h4 {
+	font-size: large;
+	color: #666666;
+	border-bottom-width: 1px;
+	border-left-width: 10px;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-bottom-color: #604BDD;
+	border-left-color: #604BDD;
+	text-align: left;
+	font-weight: bold;
+	text-indent: 4px;
+	line-height: 130%;
+}
+h5 {
+	font-size: medium;
+}
+.glayline {
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-right-color: #999999;
+	border-left-color: #666666;
+}
+.hiro-left,.hiro-right {   overflow: hidden;   height: auto;} .hiro-left img {   float: left;   margin: 0 12px 0 0 !important;   padding: 0 !important;   border: 0 !important;} .hiro-right img {   float: right;   margin: 0 0 0 12px !important;   padding: 0 !important;   border: 0 !important;} .hiro-left p,.hiro-right p {   overflow: hidden;   height: auto;}
+.tableB {
+	border:1px solid #666666;
+	border-collapse:collapse;
+	background-color: #FFFFFF;
+}  
+.tableB td { border:1px solid #666666; }
+h3 {
+ height:24px;margin:0px 0px 5px 0px;padding:6px 0px 0px 20px;
+ font-size:16px;font-weight:bold;color:#333333;
+ background-image:url(images/head010_05.gif);
+ }
+.tablenoline {
+	border:none;
+	border-collapse:collapse;
+}  
+.tablenoline td { border:none; }
+h6 {
+	font-size: medium;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #604BDD;
+	padding: 4px;
+	margin: 5px 0px;
 }

@@ -1,10 +1,73 @@
-<html lang="ja">
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja"><!-- InstanceBegin template="/Templates/temp.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>HSS iPhone Issue</title>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>KIZNA　スマート決済</title>
+<!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-attachment: scroll;
+	//background-image: url(../images/hedderback.jpg);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+BODY,TD{font-size:13px;line-height:150%;}
+@media screen and (max-width:768px) { 
+    table {width: 100%;}
+}
+.style3 {font-size: x-small}
+.style4 {font-size: large}
+.style5 {color: #FF0000}
+.style6 {color: #000080;font-weight:bold}
+.style7 {
+	color: #604BDD;
+	font-size: large;
+}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<link href="../css.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+function BACKMENU(){
+	//document.tomenu.action="menu.php";
+	document.tomenu.submit();
+}
+//-->
+</script>
 </head>
 
-<body>
+<body onLoad="MM_preloadImages('../images/navi_o_10.jpg','../images/navi_o_11.jpg','../images/navi_o_12.jpg','../images/navi_o_13.jpg','../images/navi_o_14.jpg','../images/side_o_01.jpg','../images/side_o_03.jpg','../images/side_o_04.jpg','../images/side_o_05.jpg','../images/side_o_06.jpg')" style="zoom:1.44;">
+Ver.1
 <div align="center">
 		<img src="../images/tittle_ps.gif" width="710" height="70" style="width:710;max-width: 100%;height: auto;"></br></br>
         <table width="710"  border="0" cellpadding="0" cellspacing="0">
@@ -18,7 +81,8 @@
                 <table width="100%" height="70"  border="0" cellpadding="10" cellspacing="0" background="../images/hedderback.jpg">
                   <tr>
                     <td width="25%" nowrap><span class="style4"><strong>決済メニュー【カード決済処理】</strong></span></td>
-                    <td></td>
+                    <td><div align="right">「
+						モアウール					」&nbsp;&nbsp;</div></td>
                     <!-- td width="10"><div align="right">
                       <input type="button" name="Button" value="ログアウト">
                     </div></td -->
@@ -33,16 +97,17 @@
 				<span class="style5">※「次へ」または「今すぐ支払う」ボタンをクリックしても、画面を閉じず、暫らくお待ちください。<br>
 				※応答が遅れても、再度入力し「今すぐ支払う」ボタンをクリック（二重決済）しないでください。</span><br>
 				</TD></TR></TABLE>
-
+<!-- iframe name="hss_iframe" width="570px" height="350px" frameborder="1" scrolling="no"></iframe -->
+<div align="center">
 <iframe name="hss_iframe" width="500px" height="1000px" frameborder="0" scrolling="no"></iframe>
-
+</div>
 <form style="display:none" target="hss_iframe" name="form_iframe" action=https://securepayments.paypal.com/acquiringweb method="post">
 <input type="hidden" name="cmd" value="_hosted-payment">
 <!-- input type="hidden" name="business" value="D9X96WXPH4Z4J" -->
-<input type="hidden" name="business" value="fd3s.boost@gmail.com">
+<input type="hidden" name="business" value="xmc539@cp.kizna-club.com">
 <input type="hidden" name="paymentaction" value="sale">
 <input type="hidden" name="template" value="templateD" />
-<input type="hidden" name="return" value="https://dummyhost.com/smart/kessaiok.php"><!-- ※ﾘﾀｰﾝﾌｧｲﾙ注意 -->
+<input type="hidden" name="return" value="https://kizna-club.com/smart/kessaiok.php"><!-- ※ﾘﾀｰﾝﾌｧｲﾙ注意 -->
 <input type="hidden" name="billing_state" value="神奈川県">
 <input type="hidden" name="billing_city" value="横浜市">
 <input type="hidden" name="billing_address1" value="港南区上大岡西1-4-9">
@@ -59,7 +124,57 @@
 <script type="text/javascript">
 document.form_iframe.submit(); 
 </script>
-
+<style type="text/css">
+<!--
+.miniLayout div.container {
+    zoom: 1.12;
+    width: 500px;
+    border-top: 0;
+    padding: 0 10px 10px 20px;
+}
+-->
+</style>
+<div class="miniLayout div.container"></div>
+                                                                        <!-- p align="center">&nbsp;</p -->
+                                    <div align="center">
+                                      <DIV align=center>                                        
+                                        <!-- p -->
+                                          <INPUT onclick="BACKMENU()" value="入力画面に戻る" type=button style="font-size: 1.2rem;">
+<!-- /p -->
+                                      </DIV>
+                    </div>
+                  </td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td height="4" valign="top"><img src="../images/tableback_03.gif" width="710" height="4"></td>
+          </tr>
+        </table>
+        <!-- InstanceEndEditable -->
+  <br>
+  <hr>
+  <p class="style3"><span style="color: rgb(0, 0, 0); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 19.109375px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;">株式会社 KIZNA　　TEL： 03-6261-9744　　</span><span class="style3">MAIL：<a href="mailto:support@kizna-club.com">support@kizna-club.com</a></span><a href="mailto:support@kizna-club.com"><br>
+        <br>
+  </a>2013 (C) KIZNA-CLUB ALL RIGHTS RESERVED.</p>
+</div>
+<form method="post" name="tomenu" action="kessai.php">
+<INPUT name="contflg" type=hidden value="0">
+<INPUT name="contcost" type=hidden value="1500">
+<INPUT name="limityear" type=hidden value="2026">
+<INPUT name="limitmonth" type=hidden value="06">
+<INPUT name="opecnt" type=hidden value="1">
+<INPUT name="jmbpass" type=hidden value="">
+<INPUT name="cardbrand" type=hidden value="1,VISA">
+<INPUT name="cardmm" type=hidden value="08">
+<INPUT name="cardyy" type=hidden value="28">
+<INPUT name="billing_last_name" type=hidden value="paypal">
+<INPUT name="billing_first_name" type=hidden value="test">
+<INPUT name="m_add1" type=hidden value="">
+<INPUT name="m_add2" type=hidden value="">
+<INPUT name="m_type" type=hidden value="">
+<INPUT name="subtotal" type=hidden value="1500">
+<INPUT name="smartpw" type=hidden value="test">
+</form>
 </body>
-</html>
-
+<!-- InstanceEnd --></html>
